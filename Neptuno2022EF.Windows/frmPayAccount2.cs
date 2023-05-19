@@ -207,17 +207,22 @@ namespace Neptuno2022EF.Windows
 
         private void btnFullPayment_Click(object sender, EventArgs e)
         {
-            try
+            DialogResult option = MessageBox.Show("You're going to pay all debts. Do you want to continue?", "Warning",
+                                                        MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if(option == DialogResult.Yes)
             {
-                _service.PayDebts(_currentAccount, _list);
+                try
+                {
+                    _service.PayDebts(_currentAccount, _list);
 
-                MessageBox.Show("The movements has been paid succesfully.", "Succesfull Movement", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("The movements has been paid succesfully.", "Succesfull Movement", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                DialogResult = DialogResult.OK;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    DialogResult = DialogResult.OK;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
