@@ -423,6 +423,27 @@
   <ItemGroup>
     <None Include="Resources\Cuenta-Corriente.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuenta-bancaria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuenta-Corriente1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuenta-corriente-50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detalleCtaCte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detalles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
