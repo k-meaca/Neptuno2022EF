@@ -78,7 +78,7 @@
             // 
             // btnCurrenstAccounts
             // 
-            this.btnCurrenstAccounts.Image = ((System.Drawing.Image)(resources.GetObject("btnCurrenstAccounts.Image")));
+            this.btnCurrenstAccounts.Image = global::Neptuno2022EF.Windows.Properties.Resources.cuenta_corriente_50px;
             this.btnCurrenstAccounts.Location = new System.Drawing.Point(584, 125);
             this.btnCurrenstAccounts.Name = "btnCurrenstAccounts";
             this.btnCurrenstAccounts.Size = new System.Drawing.Size(147, 76);
